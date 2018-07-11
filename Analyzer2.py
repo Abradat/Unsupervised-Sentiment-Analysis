@@ -37,7 +37,7 @@ def analyze_sentiment_sentiwordnet_lexicon(review, verbose=False):
     return final_sentiment
 
 def readFromCSV():
-    dataset = pd.read_csv(r'tweets_main.csv')
+    dataset = pd.read_csv(r'CSVs/tweets_main.csv')
 
     reviews = np.array(dataset['review'])
     sentiments = np.array(dataset['sentiment'])

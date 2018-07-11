@@ -58,7 +58,7 @@ def generatScoreCsv(predictedSentiments, dates):
     file.close()
 
 def readFromTweet():
-    dataset = pd.read_csv(r'tweet.csv')
+    dataset = pd.read_csv(r'CSVs/tweet.csv')
 
     reviews = np.array(dataset['text'])
     dates = np.array(dataset['created_at'])
@@ -92,7 +92,7 @@ def parseDate(date):
     return tmp
 
 def drawPolt():
-    dataset = pd.read_csv(r'results.csv')
+    dataset = pd.read_csv(r'CSVs/results.csv')
 
     scores = np.array(dataset['score'])
     dates = np.array(dataset['created_at'])
@@ -114,7 +114,7 @@ def drawPolt():
     #print(mainDict)
 
 def drawPlot2():
-    dataset = pd.read_csv(r'results.csv')
+    dataset = pd.read_csv(r'CSVs/results.csv')
 
     scores = np.array(dataset['score'])
     dates = np.array(dataset['created_at'])
