@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Jul 31 20:05:23 2017
-
-@author: DIP
-@Copyright: Dipanjan Sarkar
-"""
 
 from sklearn import metrics
 import numpy as np
